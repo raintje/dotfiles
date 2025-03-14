@@ -3,7 +3,7 @@ export ZSH_COMPDUMP="${HOME}/.cache/.zcompdump-${HOST}"
 export ZSH_CACHE_DIR="${HOME}/.cache"
 
 if [ ! -d "$ZSH_CACHE_DIR" ]; then
-    mkdir -p "$ZSH_CACHE_DIR"
+    mkdir -p "$ZSH_CACHE_DIR/completions"
 fi
 
 (( ${fpath[(Ie)"$ZSH_CACHE_DIR/completions"]} )) || fpath=("$ZSH_CACHE_DIR/completions" $fpath)
