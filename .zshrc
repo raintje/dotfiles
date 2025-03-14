@@ -1,9 +1,11 @@
+#!/bin/zsh
+
 # Put the ZCOMPDUMP in the cache directory to not clog up the home directory
 export ZSH_COMPDUMP="${HOME}/.cache/.zcompdump-${HOST}"
 export ZSH_CACHE_DIR="${HOME}/.cache"
 
 if [ ! -d "$ZSH_CACHE_DIR" ]; then
-    mkdir -p "$ZSH_CACHE_DIR/completions"
+    mkdir -p "$ZSH_CACHE_DIR"
 fi
 
 (( ${fpath[(Ie)"$ZSH_CACHE_DIR/completions"]} )) || fpath=("$ZSH_CACHE_DIR/completions" $fpath)
