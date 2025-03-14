@@ -7,6 +7,9 @@ export NVM_LAZY_LOAD_EXTRA_COMMANDS=('code', 'nvim')
 export NVM_AUTO_USE=true
 export NVM_COMPLETION=true
 
+# composer
+export COMPOSER_HOME="$HOME/.local/share/composer"
+
 alias c="clear"
 
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$COMPOSER_HOME/vendor/bin:$HOME/.local/bin"
