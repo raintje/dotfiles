@@ -11,7 +11,6 @@ export NVM_LAZY_LOAD_EXTRA_COMMANDS=("code", "nvim")
 
 # Composer
 export COMPOSER_HOME="$HOME/.local/share/composer"
-export COMPOSER_BIN_DIR="$HOME/.local/bin"
 
 alias c="clear"
 
