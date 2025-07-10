@@ -2,6 +2,7 @@
 
 export EDITOR="nvim"
 export SHELL="zsh"
+export BROWSER="zen"
 
 # nvm
 export NVM_LAZY_LOAD=true

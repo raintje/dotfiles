@@ -66,7 +66,7 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Source fzf
-source "${HOME}/.fzf.zsh"
+source <(fzf --zsh)
 
 eval "$(fzf --zsh)"
 eval "$(oh-my-posh init zsh --config $HOME/.config/oh-my-posh/theme.toml)"
