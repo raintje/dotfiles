@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-export EDITOR="nvim"
+export EDITOR="zed"
 export SHELL="zsh"
 export BROWSER="zen"
 
@@ -8,11 +8,13 @@ export BROWSER="zen"
 export NVM_LAZY_LOAD=true
 export NVM_AUTO_USE=true
 export NVM_COMPLETION=true
-export NVM_LAZY_LOAD_EXTRA_COMMANDS=("code", "nvim")
+export NVM_LAZY_LOAD_EXTRA_COMMANDS=("zed", "nvim")
 
 # Composer
 export COMPOSER_HOME="$HOME/.local/share/composer"
 
+# Aliases
 alias c="clear"
+alias z="zed"
 
-export PATH="$PATH:$COMPOSER_HOME/vendor/bin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
