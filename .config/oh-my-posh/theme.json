@@ -1,0 +1,95 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+  "final_space": true,
+  "transient_prompt": {
+    "template": "❯ ",
+    "background": "transparent",
+    "foreground_templates": [
+      "{{if gt .Code 0}}lightRed{{end}}",
+      "{{if eq .Code 0}}lightMagenta{{end}}"
+    ]
+  },
+  "secondary_prompt": {
+    "template": "❯❯ ",
+    "foreground": "lightGreen",
+    "background": "transparent"
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "template": "{{ .Path }}",
+          "foreground": "lightBlue",
+          "background": "transparent",
+          "type": "path",
+          "style": "plain",
+          "cache": {
+            "duration": "none"
+          },
+          "options": {
+            "style": "full"
+          }
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "lightGreen",
+          "background": "transparent",
+          "template": " {{ .HEAD }}{{ if or (.Working.Changed) (.Staging.Changed) }}*{{ end }} <lightCyan>{{ if gt .Behind 0 }}⇣{{ end }}{{ if gt .Ahead 0 }}⇡{{ end }}</>",
+          "options": {
+            "branch_icon": "",
+            "commit_icon": "@",
+            "fetch_status": true
+          },
+          "cache": {
+            "duration": "none"
+          }
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
+      "overflow": "hidden",
+      "segments": [
+        {
+          "template": "{{ .FormattedMs }}",
+          "foreground": "lightYellow",
+          "background": "transparent",
+          "type": "executiontime",
+          "style": "plain",
+          "cache": {
+            "duration": "none"
+          },
+          "options": {
+            "threshold": 5000
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "template": "❯ ",
+          "background": "transparent",
+          "type": "text",
+          "style": "plain",
+          "foreground_templates": [
+            "{{if gt .Code 0}}lightRed{{end}}",
+            "{{if eq .Code 0}}lightMagenta{{end}}"
+          ],
+          "cache": {
+            "duration": "none"
+          }
+        }
+      ]
+    }
+  ],
+  "version": 4
+}
