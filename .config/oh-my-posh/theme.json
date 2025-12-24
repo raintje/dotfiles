@@ -3,7 +3,7 @@
   "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "final_space": true,
   "transient_prompt": {
-    "template": "❯ ",
+    "template": "❯",
     "background": "transparent",
     "foreground_templates": [
       "{{if gt .Code 0}}lightRed{{end}}",
@@ -11,7 +11,7 @@
     ]
   },
   "secondary_prompt": {
-    "template": "❯❯ ",
+    "template": "❯❯",
     "foreground": "lightGreen",
     "background": "transparent"
   },
@@ -76,7 +76,7 @@
       "newline": true,
       "segments": [
         {
-          "template": "❯ ",
+          "template": "❯",
           "background": "transparent",
           "type": "text",
           "style": "plain",
