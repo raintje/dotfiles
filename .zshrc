@@ -36,7 +36,7 @@ if [ ! -f "${LOCAL_BIN_DIR}/fzf" ]; then
    echo "fzf not found. Installing version ${FZF_VER} to ${LOCAL_BIN_DIR}/fzf"
    curl -sL https://github.com/junegunn/fzf/releases/download/v0.67.0/fzf-0.67.0-linux_amd64.tar.gz | tar zx -C ${LOCAL_BIN_DIR}
 else
-  echo "Found fzf at ${LOCAL_BIN_DIR}/fzf\n"
+  echo "Found fzf at ${LOCAL_BIN_DIR}/fzf"
 fi
 
 # Download oh-my-posh if it's not found
@@ -44,7 +44,7 @@ if [ ! -f "${LOCAL_BIN_DIR}/oh-my-posh" ]; then
   echo "oh-my-posh not found. Installing to ${LOCAL_BIN_DIR}/oh-my-posh"
   curl -s https://ohmyposh.dev/install.sh | bash -s -- -d "${LOCAL_BIN_DIR}"
 else
-  echo "Found oh-my-posh at ${LOCAL_BIN_DIR}/oh-my-posh\n"
+  echo "Found oh-my-posh at ${LOCAL_BIN_DIR}/oh-my-posh"
 fi
 
 # Antigen location
