@@ -1,4 +1,4 @@
-.config/**/* 
+.config/*
 
-!.config/nvim/**/*
-!.config/oh-my-posh/**/*
+!.config/nvim/
+!.config/oh-my-posh/
