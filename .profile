@@ -10,11 +10,8 @@ export NVM_AUTO_USE=true
 export NVM_COMPLETION=true
 export NVM_LAZY_LOAD_EXTRA_COMMANDS=("zed", "nvim")
 
-# Composer
-export COMPOSER_HOME="$HOME/.local/share/composer"
-
 # Aliases
 alias c="clear"
-alias z="zed"
+alias z="zed ."
 
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="${PATH}:${HOME}/.local/bin"
