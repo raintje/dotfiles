@@ -104,3 +104,6 @@ source <(fzf --zsh)
 
 eval "$(fzf --zsh)"
 eval "$(oh-my-posh init zsh --config ${HOME}/.config/oh-my-posh/theme.json)"
+
+# Cleanup
+rm ${HOME}/.zcompdump

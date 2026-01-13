@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-export EDITOR="zed"
+export EDITOR="code"
 export SHELL="zsh"
 export BROWSER="zen"
 
