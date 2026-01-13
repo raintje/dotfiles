@@ -4,7 +4,15 @@ Repository that contains portable dotfiles for use in any new GNU/Linux distribu
 
 ## Requirements
 
-Ensure you have `git` and `stow` installed on your system.
+The `.zshrc` will automatically install [fzf](https://github.com/junegunn/fzf), [oh-my-posh](https://ohmyposh.dev/) and [antigen](https://github.com/zsh-users/antigen) but requires some packages to do so:
+
+```sh
+sudo apt-get install curl unzip zip zsh
+```
+
+Might wanna `chsh` to zsh as well, obviously.
+
+Ensure you have `git` and `stow` installed on your system to install the dotfiles to your system proper.
 
 ### Git
 
