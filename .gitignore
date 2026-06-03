@@ -1,5 +1,4 @@
 .config/*
 
-!.config/nvim/
 !.config/oh-my-posh/
 !.config/Code/
