@@ -1,8 +1,8 @@
 #!/bin/zsh
 
-export EDITOR="code"
+export EDITOR="vim"
 export SHELL="zsh"
-export BROWSER="zen"
+export BROWSER="firefox"
 
 # nvm
 export NVM_LAZY_LOAD=true
@@ -15,6 +15,5 @@ export PNPM_HOME="${HOME}/.local/bin"
 
 # Aliases
 alias c="clear"
-alias z="zed ."
 
 export PATH="${PATH}:${HOME}/.local/bin:${HOME}/.local/bin/pnpm"
