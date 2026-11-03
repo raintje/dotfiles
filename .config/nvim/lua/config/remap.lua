@@ -36,6 +36,10 @@ vim.keymap.set("n", "<leader>L", function ()
     vim.cmd("Lazy")
 end)
 
+vim.keymap.set("n", "<leader>M", function ()
+    vim.cmd("Mason")
+end)
+
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
